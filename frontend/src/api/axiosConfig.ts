@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api", // Replace with your backend URL if different
+  baseURL: "https://smart-expense-tracker-hcm0.onrender.com", // Replace with your backend URL if different
 });
 
 API.interceptors.request.use((req) => {
