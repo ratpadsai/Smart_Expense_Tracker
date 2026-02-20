@@ -5,7 +5,10 @@ require("dotenv").config();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: "https://smart-expense-tracker-frontend-sow8.onrender.com",
+  credentials: true
+}));
 app.use(express.json());
 
 // Connect to MongoDB
